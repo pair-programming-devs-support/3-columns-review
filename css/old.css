@@ -1,0 +1,96 @@
+:root {
+  --color-orange: hsl(31, 77%, 52%);
+  --color-cyan: hsl(184, 100%, 22%);
+  --color-dark-cyan: hsl(179, 100%, 13%);
+  --color-white: hsla(0, 0%, 100%, 0.75);
+  --color-gray: hsl(0, 0;%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+p,
+h2 {
+  margin: 0;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+p,
+a {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.cards {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  max-width: 100rem;
+  margin: 2.5rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: grid;
+  /* grid-template-columns:; */
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+}
+
+.card {
+  padding: 5rem;
+  display: grid;
+  gap: 2rem;
+  color: var(--color-white);
+  background-color: var(--color, white);
+}
+
+.card-icon {
+  width: 5rem;
+}
+
+.card-title {
+  /* font-size: 3rem; */
+  font-size: clamp(3rem, 9vw, 5rem);
+  text-transform: uppercase;
+}
+
+.card-description {
+  line-height: 1.6;
+  margin-bottom: clamp(1rem, 5vw, 12rem);
+}
+
+.card-cta {
+  text-decoration: none;
+  color: var(--color, var(--color-white));
+  background-color: var(--color-white);
+  padding: 0.8em 2em;
+  border-radius: 3rem;
+  justify-self: start;
+}
+
+.card-orange {
+  --color: var(--color-orange);
+}
+
+.card-cyan {
+  --color: var(--color-cyan);
+}
+
+.card-dark-cyan {
+  --color: var(--color-dark-cyan);
+}
+
+/* @media screen and (min-width: 90em) {
+  .card-description {
+    margin-bottom: 5rem;
+  }
+} */
